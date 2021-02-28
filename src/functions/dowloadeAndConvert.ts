@@ -32,13 +32,13 @@ export const downloadAndConvert = async (query) => {
 
     video.on("end", async () => {
       console.log("finished downloading!");
-     console.log(__dirname)
-      await ffmpeg("/myvideo.mp4")
+    
+      await ffmpeg("/app/myvideo.mp4")
         .withAudioCodec("libmp3lame")
         .toFormat("mp3")
-        .saveToFile(`/telegraf/music/${newName}`)
+        .saveToFile(`/app/music/${newName}`)
         .on("end", async () => {
-          file = readFileSync(`/music/${newName}`);
+          file = readFileSync(`/app/music/${newName}`);
 
           const params = {
             Bucket: process.env.BucketName,
