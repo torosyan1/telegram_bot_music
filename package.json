@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Vahag Torosyan",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "node src/index.ts",
     "build": "tsc"
   },
   "license": "MIT",
