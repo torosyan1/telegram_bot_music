@@ -1,3 +1,4 @@
+import "../../env";
 import fs, { readFileSync } from "fs";
 import { S3 } from "../aws";
 import youtubedl from "youtube-dl";
