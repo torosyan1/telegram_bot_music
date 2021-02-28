@@ -57,7 +57,7 @@ export const downloadAndConvert = async (query) => {
           await fs.unlink(
             `/home/vahag/Desktop/telegraf/music/${newName}`,
             (err) => {
-              if (err) return err;
+              if (err) return console.error(err);
             }
           );
         });
