@@ -36,9 +36,9 @@ export const downloadAndConvert = async (query) => {
       await ffmpeg("/app/myvideo.mp4")
         .withAudioCodec("libmp3lame")
         .toFormat("mp3")
-        .saveToFile(`/app/music/${newName}`)
+        .saveToFile(`/app/${newName}`)
         .on("end", async () => {
-          file = readFileSync(`/app/music/${newName}`);
+          file = readFileSync(`/app/${newName}`);
 
           const params = {
             Bucket: process.env.BucketName,
