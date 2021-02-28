@@ -32,7 +32,7 @@ export const downloadAndConvert = async (query) => {
 
     video.on("end", async () => {
       console.log("finished downloading!");
-
+     console.log(__dirname)
       await ffmpeg("/home/vahag/Desktop/telegraf/myvideo.mp4")
         .withAudioCodec("libmp3lame")
         .toFormat("mp3")
