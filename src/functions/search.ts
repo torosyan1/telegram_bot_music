@@ -1,6 +1,5 @@
 import { YTSearcher } from "ytsearcher";
 
-
 const searcher = new YTSearcher(process.env.YTKET);
 
 export const search = async (ctx) => {
