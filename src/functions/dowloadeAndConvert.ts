@@ -1,7 +1,7 @@
 import fs, { readFileSync } from "fs";
 import { S3 } from "../aws";
 import youtubedl from "youtube-dl";
-import ffmpeg from "ffmpeg";
+import ffmpeg from "fluent-ffmpeg";
 import { bot } from "../index";
 
 export const downloadAndConvert = async (query) => {
