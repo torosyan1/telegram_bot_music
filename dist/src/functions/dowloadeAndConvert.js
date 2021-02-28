@@ -59,7 +59,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.downloadAndConvert = void 0;
-require("../../env");
 var fs_1 = __importStar(require("fs"));
 var aws_1 = require("../aws");
 var youtube_dl_1 = __importDefault(require("youtube-dl"));

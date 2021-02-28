@@ -4,7 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.bot = void 0;
-require("../env");
 var express_1 = __importDefault(require("express"));
 var telegraf_1 = __importDefault(require("telegraf"));
 var session_1 = __importDefault(require("telegraf/session"));

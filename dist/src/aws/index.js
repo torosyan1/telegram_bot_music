@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.S3 = void 0;
-require("../../env");
 var aws_sdk_1 = __importDefault(require("aws-sdk"));
+require("../../env");
 exports.S3 = new aws_sdk_1.default.S3({
     accessKeyId: process.env.accessKeyId,
     secretAccessKey: process.env.secretAccessKey,

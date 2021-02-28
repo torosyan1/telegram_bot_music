@@ -1,4 +1,5 @@
 import { YTSearcher } from "ytsearcher";
+import '../../env';
 
 const searcher = new YTSearcher(process.env.YTKET);
 

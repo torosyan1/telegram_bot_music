@@ -38,6 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.search = void 0;
 var ytsearcher_1 = require("ytsearcher");
+require("../../env");
 var searcher = new ytsearcher_1.YTSearcher(process.env.YTKET);
 var search = function (ctx) { return __awaiter(void 0, void 0, void 0, function () {
     var resultC, reply_markup_1, options, err_1;
