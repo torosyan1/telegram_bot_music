@@ -39,14 +39,14 @@ export const downloadAndConvert = async (query) => {
         .saveToFile(`/app/${newName}`)
         .on("end", async () => {
           file = readFileSync(`/app/${newName}`);
-
+          console.log('chneged format')
           const params = {
             Bucket: process.env.BucketName,
             Key: newName,
             Body: file,
             ACL: "public-read",
           };
-
+        
           await S3.upload(params)
             .promise()
             .then((res) => {
